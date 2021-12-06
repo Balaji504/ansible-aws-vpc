@@ -41,4 +41,13 @@
           Name: sample-privsub1
       register: privsub1_out
 
+    - name: create Internet Gateway
+      ec2_vpc_igw:
+        vpc_id: "{{vpcout.vpc.id}}"
+        region: "{{region}}"
+        state: "{{state}}"
+        resource_tags:
+          Name: sample-IGW
+      register: igw_out
+
 
