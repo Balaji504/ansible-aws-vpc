@@ -1,6 +1,6 @@
 ---
 - name: Setup sample bastion host
-  hosts: local
+  hosts: localhost
   gather_facts: false
   tasks:
     - name: Import VPC setup variable
