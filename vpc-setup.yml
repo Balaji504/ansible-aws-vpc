@@ -88,7 +88,7 @@
       loop:
         - vpcout.vpc.id
         - pubsub1_out.subnet.id
-        - privsub1-out.subnet.id
+        - privsub1_out.subnet.id
         - igw_out.gateway.id
         - pubRT_out.route_table.id
         - NATGW_OUT.nat_gateway_id
