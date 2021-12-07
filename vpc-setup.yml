@@ -99,8 +99,8 @@
         privsub1id: "{{privsub1_out.subnet.id}}"
         igwid: "{{igw_out.gateway.id}}"
         pubRTid: "{{pubRT_out.route_table.id}}"
-        privRTid: "{{privRT_out.route_table.id}}"
         NATGWid: "{{NATGW_out.nat-gateway_id}}"
+        privRTid: "{{privRT_out.route_table.id}}"
     - name: Create variables file for vpc output
       copy:
         content: "vpcid: {{vpcout.vpc.id}}\npubsub1id: {{pubsub1_out.subnet.id}}\nprivsub1id: {{privsub1_out.subnet.id}}/nigwid: {{igw_out.gateway.id}}\npubRTid: {{pubRT_out.route_table.id}}\nprivRTid: {{privRT_out.route_table.id}}\nNATGWid: {{NATGW_out.nat-gateway_id}}\n"
