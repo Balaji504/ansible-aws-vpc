@@ -103,4 +103,9 @@
         NATGWid: "{{ NATGW_out.nat_gateway_id }}"
         privRTid: "{{ privRT_out.route_table.id }}"
 
+    - name: create variables file for vpc output
+      copy:
+        content: "vpcid: {{vpcout.vpc.id}}\npubsub1id: {{ pubsub1_out.subnet.id }}\nprivsub1id: {{ privsub1-out.subnet.id }}\nigwid: {{ igw_out.gateway.id }}\npubRTid: {{ pubRT_out.route_table.id }}\nNATGWid: {{ NATGW_out.nat_gateway_id }}\nprivRTid: {{ privRT_out.route_table.id }}\n"
+        dest: vars/output_vars
+
 
