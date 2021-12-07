@@ -103,7 +103,7 @@
         privRTid: "{{privRT_out.route_table.id}}"
         cacheable: yes
 
-    - name: Create variables file for vpc output
-      copy:
-        content: "vpcid: {{vpcout.vpc.id}}\npubsub1id: {{pubsub1_out.subnet.id}}\nprivsub1id: {{privsub1_out.subnet.id}}\nigwid: {{igw_out.gateway.id}}\npubRTid: {{pubRT_out.route_table.id}}\nNATGWid: {{NATGW_out.nat_gateway_id}}\nprivRTid: {{privRT_out.route_table.id}}\n"
-        dest: vars/output_vars
+    #- name: Create variables file for vpc output
+     # copy:
+      #  content: "vpcid: {{vpcout.vpc.id}}\npubsub1id: {{pubsub1_out.subnet.id}}\nprivsub1id: {{privsub1_out.subnet.id}}\nigwid: {{igw_out.gateway.id}}\npubRTid: {{pubRT_out.route_table.id}}\nNATGWid: {{NATGW_out.nat_gateway_id}}\nprivRTid: {{privRT_out.route_table.id}}\n"
+       # dest: vars/output_vars
